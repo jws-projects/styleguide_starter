@@ -1,0 +1,55 @@
+@for $i from 1 through 20 {
+  .hp_pt#{$i * 5} {
+    padding-top: 5px * $i;
+  }
+  .hp_pb#{$i * 5} {
+    padding-bottom: 5px * $i;
+  }
+  .hp_pl#{$i * 5} {
+    padding-left: 5px * $i;
+  }
+  .hp_pr#{$i * 5} {
+    padding-right: 5px * $i;
+  }
+  .hp_mt#{$i * 5} {
+    margin-top: 5px * $i;
+  }
+  .hp_mb#{$i * 5} {
+    margin-bottom: 5px * $i;
+  }
+  .hp_ml#{$i * 5} {
+    margin-left: 5px * $i;
+  }
+  .hp_mr#{$i * 5} {
+    margin-right: 5px * $i;
+  }
+}
+
+@include media("<tab") {
+  @for $i from 1 through 20 {
+    .hp_sp_pt#{$i * 5} {
+      padding-top: 5px * $i;
+    }
+    .hp_sp_pb#{$i * 5} {
+      padding-bottom: 5px * $i;
+    }
+    .hp_sp_pl#{$i * 5} {
+      padding-left: 5px * $i;
+    }
+    .hp_sp_pr#{$i * 5} {
+      padding-right: 5px * $i;
+    }
+    .hp_sp_mt#{$i * 5} {
+      margin-top: 5px * $i;
+    }
+    .hp_sp_mb#{$i * 5} {
+      margin-bottom: 5px * $i;
+    }
+    .hp_sp_ml#{$i * 5} {
+      margin-left: 5px * $i;
+    }
+    .hp_sp_mr#{$i * 5} {
+      margin-right: 5px * $i;
+    }
+  }
+}
